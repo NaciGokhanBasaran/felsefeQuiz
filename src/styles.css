@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Questrial", sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+.MainPage {
+  margin-top: -21px;
+  margin-left: -10px;
+  margin-right: -1px;
+  height: 1000vh;
+}
+.hero-container {
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+
+  display: flex;
+  justify-content: center; /*by Naci Gökhan Baaşaran */
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  max-width: 80%;
+}
+.QRCode {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+}
+.qrcode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qrcode img {
+  width: 25vh;
+}
+.nasilup {
+  background-color: black;
+
+  height: 1000px;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+
+  align-items: center;
+}
+.Nasil {
+  margin-top: 30px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+}
+.Nasil .text {
+  width: 80%;
+  font-size: 19px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text {
+    font-size: 1.5rem;
+  }
+}
+.label {
+  color: white;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.Filozoflar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Filozoflar > div {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+}
+
+.Filozoflar h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.Filozoflar > div > img {
+  width: 50%;
+  height: 60%;
+}
+.Filozoflar > div > button {
+  display: block;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+}
+.Filozoflar > div > button a {
+  color: white;
+  text-decoration: none;
+}
+@keyframes changeBackground {
+  0% {
+    background-color: #007bff;
+  }
+  25% {
+    background-color: #28a745;
+  }
+  50% {
+    background-color: #ffc107;
+  }
+  75% {
+    background-color: #dc3545;
+  }
+  100% {
+    background-color: #007bff;
+  }
+}
+
+.MainPage {
+  animation-name: changeBackground;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.Filozoflar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 350px;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+/*by Naci Gökhan Baaşaran */
+.card a {
+  padding: 0.5rem 1rem;
+  background-color: #008cba;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #005f6b;
+  cursor: pointer;
+}
+
+.FilozofBilgi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.mektup {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 90%;
+}
+
+.filozof-resim {
+  border: 2px solid rgb(45, 80, 206);
+  border-radius: 60%;
+  width: 10%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.ad-yas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.ad-yas p {
+  margin: 0;
+}
+
+button {
+  background-color: #008cba;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+button:hover {
+  background-color: #005f6b;
+}
+
+.QuizPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.QuizPage h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.QuizPage p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.sorular {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.sorular h1 {
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+}
+
+.sorular h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.cevaplar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cevaplar button {
+  margin: 10px;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cevaplar button:hover {
+  background-color: #aaa;
+}
+
+.cevaplar button.selected {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+button {
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #2e7d32;
+}
+
+@media (max-width: 768px) {
+  .QuizPage h1 {
+    font-size: 2rem;
+  }
+
+  .sorular h1 {
+    font-size: 1.5rem;
+  }
+
+  .sorular h3 {
+    font-size: 1.2rem;
+  }
+
+  .cevaplar button {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+  }
+}
+.cevaplar button.wrong {
+  background-color: red;
+}
+.qrcode {
+  width: 200px;
+}
+
+.navbar {
+  background-color: #252e3f;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.navbar-logo {
+  color: #fff;
+  justify-self: flex-start;
+  cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item {
+  height: 80px;
+}
+
+.nav-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #242222;
+    left: 0;
+    /*by Naci Gökhan Baaşaran */
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    width: 80%;
+    margin: 0;
+    align-items: center;
+  }
+  .nav-menu.active li {
+    padding: 2rem;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .nav-links {
+    text-align: center;
+
+    width: 100%;
+    font-size: xx-large;
+  }
+
+  .nav-item {
+    height: 100%;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .Filozoflar {
+    margin-top: -80px;
+  }
+  .hero-container {
+    margin-top: -70px;
+  }
+  .Filozoflar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Filozoflar > div {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 100px;
+  }
+
+  .Filozoflar h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .Filozoflar > div > img {
+    width: 50%;
+    height: 60%;
+  }
+
+  .more {
+    width: 200px;
+    height: 35px;
+  }
+  .nav-menu.active {
+    background: #242222;
+
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    font-size: 0.1rem;
+    width: 95%;
+    margin: 0;
+    align-self: center;
+    align-items: center;
+  }
+  .mektup p {
+    font-size: small;
+  }
+  .mektup img {
+    width: 80px;
+  }
+  .Nasil .text p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .nav-links {
+    font-size: 1.7rem;
+  }
+  .Filozoflar > div {
+    padding: 20px;
+    margin: 10px;
+    width: 60px;
+  }
+
+  .Filozoflar h1 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .Filozoflar > div > img {
+    width: 50%;
+    height: 50%;
+  }
+  .basla {
+    /*class isimleri değişecek  */
+    width: 70px;
+    height: 20px;
+    font-size: small;
+    padding: 0;
+  }
+
+  .nav-menu.active {
+    width: 99%;
+
+    z-index: 1;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+  .Nasil .text p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 245px) {
+  .hero-text p {
+    font-size: 16px;
+  }
+  .hero-text h1 {
+    font-size: 22px;
+  }
+  .basla {
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .more {
+    width: 130px;
+    font-size: 15px;
+    height: 35px;
+  }
+  .nav-menu.active {
+    width: 95%;
+  }
+
+  .Filozoflar > div {
+    padding: 20px;
+    margin: 5px;
+    width: 45px;
+  }
+
+  .Filozoflar h1 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .Filozoflar > div > img {
+    width: 50%;
+    height: 50%;
+  }
+  .nav-links {
+    font-size: 1.3rem;
+  }
+}
